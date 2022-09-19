@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+server/node_modules
+server/yarn-error.log
+server/yarn.lock
+server/package-lock.json
+site/node_modules
+site/yarn-error.log
+site/yarn.lock
+site/package-lock.json
+
+# production
+/dist
+/public
+/index.js
+
+# misc
+site/.DS_Store
+site/.env.local
+site/.env.development.local
+site/.env.production.local
+
+npm-debug.log*
+site/yarn-debug.log*
+site/yarn-error.log*

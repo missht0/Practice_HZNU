@@ -1,0 +1,138 @@
+@import "../../less/var.less";
+
+
+.g-conf {
+  width: @sys-width;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  background: #fff;
+  height: calc(100vh - 75px);
+  
+  .m-conf {
+    margin: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .m-btn {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius:5px;
+      cursor: pointer;
+      i {
+        margin-right: 10px;
+      }
+    }
+
+    .m-fun {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px 20px;
+
+      .m-btn {
+        width: 150px;
+      }
+    }
+    
+    .m-list {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #eee;
+      font-size: 16px;
+
+
+      .m-row {
+        display: flex;
+        padding:10px 20px;
+        align-items: center;
+
+        &:nth-child(1) {
+          background:#336699!important;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        &:nth-child(2n+1) {
+          background:#eee;
+        }
+
+        span {
+          padding: 10px;
+          text-align: center;
+
+          &:nth-child(1) {
+            width: 80px;
+          }
+          &:nth-child(2) {
+            width: 150px;
+          }
+          &:nth-child(3) {
+            width: 150px;
+          }
+          &:nth-child(4) {
+            width: 200px;
+          }
+          &:nth-child(n+5) {
+            width: 120px;
+          }
+          &:nth-child(9) {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            .m-btn {
+              width: 100px;
+              &+.m-btn {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+
+  .m-form {
+    position:absolute;
+    width: 100%;
+    top: 0;
+    bottom:0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .m-wrap {
+      width: 600px;
+      background: #fff;
+      padding: 20px 30px;
+
+      .m-fun {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          height: 40px;
+          width: 150px;
+          &+button {
+            margin-left: 20px;
+          }
+        }
+      }
+      
+    }
+  }
+}
+
+
+
