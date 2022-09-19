@@ -21,6 +21,6 @@ site/.env.local
 site/.env.development.local
 site/.env.production.local
 
-npm-debug.log*
+site/npm-debug.log*
 site/yarn-debug.log*
 site/yarn-error.log*
