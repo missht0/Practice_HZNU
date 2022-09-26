@@ -1,6 +1,6 @@
 var mode = process.env.REACT_APP_MY_VAR
 var API_SERVER = 'http://121.5.5.157:8000'
-
+// var API_SERVER = 'http://localhost'
 // if (mode === 'development') {
 //   // API_SERVER = 'http://localhost:8080'
 //   API_SERVER = 'https://mqcai.top'

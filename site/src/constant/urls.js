@@ -7,5 +7,6 @@ export const API_QRY_CLS_MAIN  = API_SERVER + '/qryClsMain'
 export const API_SAV_CLS       = API_SERVER + '/savCls'
 export const API_QRY_CLS_HIS      = API_SERVER + '/qryclsHis'
 export const API_QRY_CLS_SIM      = API_SERVER + '/qryclsSim'
+export const API_EXPORT     = API_SERVER + '/export'
 
 

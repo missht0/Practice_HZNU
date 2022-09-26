@@ -31,6 +31,10 @@ class Login extends React.Component {
 	}
 
   doLogin=async(u)=>{
+	if(u.uid=='admin'||u.pwd=='admin'){
+		this.props.history.push("/help")
+		return
+	}
     console.log(u)
     this.setState({ loading: true })
     let r = await this.store.post(urls.API_LOGIN, u)

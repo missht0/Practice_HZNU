@@ -88,7 +88,7 @@ class Tech extends React.Component {
 
   doSelWeb = (e) => {
     let { clsDetail } = this.state
-    clsDetail[0].web = (!clsDetail[0].web) ? 1 : 0
+    clsDetail[0].web = (!clsDetail[0].web) ? true : false
     this.setState({ clsDetail: clsDetail })
   }
 
@@ -377,8 +377,6 @@ class Tech extends React.Component {
                     <Tooltip placement="right" title="Excel选择16行5列拷贝">
                       <div className="m-item" style={{ 'background': '#41ba00', 'color': '#fff' }} onClick={this.doImportE}>剪贴导入实验</div>
                     </Tooltip>
-
-
                   </div>
                   <div className="m-fun">
                     <Tooltip placement="right" title="批量生成若干周教学数据">

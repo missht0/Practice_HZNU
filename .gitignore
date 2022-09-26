@@ -14,6 +14,8 @@ site/package-lock.json
 /dist
 /public
 /index.js
+server/export
+server/export.zip
 
 # misc
 site/.DS_Store
